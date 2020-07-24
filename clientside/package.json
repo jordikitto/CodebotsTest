@@ -1,48 +1,121 @@
 {
-  "name": "clientside",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "~7.2.0",
-    "@angular/common": "~7.2.0",
-    "@angular/compiler": "~7.2.0",
-    "@angular/core": "~7.2.0",
-    "@angular/forms": "~7.2.0",
-    "@angular/platform-browser": "~7.2.0",
-    "@angular/platform-browser-dynamic": "~7.2.0",
-    "@angular/router": "~7.2.0",
-    "core-js": "^2.5.4",
-    "rxjs": "~6.3.3",
-    "tslib": "^1.9.0",
-    "zone.js": "~0.8.26"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.13.0",
-    "@angular/cli": "~7.3.10",
-    "@angular/compiler-cli": "~7.2.0",
-    "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
-    "@types/jasmine": "~2.8.8",
-    "@types/jasminewd2": "~2.0.3",
-    "codelyzer": "~4.5.0",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.0.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~1.1.2",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.4.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~5.11.0",
-    "typescript": "~3.2.2"
-  }
+	"name": "client",
+	"version": "1.1.1",
+	"scripts": {
+		"ng": "ng",
+		"start": "ng serve",
+		"build": "ng build",
+		"buildProd": "ng build --prod --optimization=false",
+		"test": "ng test",
+		"lint": "ng lint",
+		"e2e": "ng e2e",
+		"compodoc": "npx compodoc -p src/tsconfig.app.json",
+		"//": [
+			" protected region % [Add more scripts here] off begin "
+		],
+		"//": [
+			" protected region % [Add more scripts here] end "
+		]
+	},
+	"private": true,
+	"dependencies": {
+		"//": [
+			" protected region % [Configure the package versions here] off begin "
+		],
+		"@angular/animations": "~9.1.1",
+		"@angular/common": "~9.1.1",
+		"@angular/compiler": "~9.1.1",
+		"@angular/core": "~9.1.1",
+		"@angular/forms": "~9.1.1",
+		"@angular/platform-browser": "~9.1.1",
+		"@angular/platform-browser-dynamic": "~9.1.1",
+		"@angular/router": "~9.1.1",
+		"@angular/cdk": "~9.2.1",
+		"rxjs": "~6.5.4",
+		"tslib": "^1.10.0",
+		"zone.js": "~0.10.2",
+		"@ngrx/effects": "~8.6.0",
+		"@ngrx/store": "~8.6.0",
+		"@ngrx/store-devtools": "~8.6.0",
+		"@ngrx/router-store": "~8.6.0",
+		"harmony": "http://codebots-cdn.s3.amazonaws.com/harmony/harmony-1.0.2.tar.gz",
+		"core-js": "~3.2.1",
+		"immer": "~4.0.0",
+		"immutable": "~4.0.0-rc.12",
+		"lodash": "~4.17.11",
+		"moment": "~2.24.0",
+		"@ng-select/ng-select": "~4.0.0",
+		"ng-click-outside": "~5.1.1",
+		"ng-pick-datetime": "~7.0.0",
+		"ngx-toastr": "~12.0.1",
+		"@preeco-privacy/ngx-modal-dialog": "~3.0.7",
+		"ngx-cookie-service": "~2.2.0",
+		"zxcvbn": "~4.4.2",
+		"angular-password-strength-meter": "~1.0.2",
+		"apollo-angular": "~1.9.1",
+		"apollo-angular-link-http": "~1.10.0",
+		"apollo-link-error": "~1.1.13",
+		"apollo-link": "~1.2.14",
+		"apollo-client": "~2.6.8",
+		"apollo-cache-inmemory": "~1.6.5",
+		"graphql-tag": "~2.10.1",
+		"graphql": "~14.5.8",
+		"//": [
+			" protected region % [Configure the package versions here] end "
+		],
+		"//": [
+			" protected region % [Add custom dependencies here] off begin "
+		],
+		"//": [
+			" protected region % [Add custom dependencies here] end "
+		]
+	},
+	"devDependencies": {
+		"//": [
+			" protected region % [Configure the package versions for development here] off begin "
+		],
+		"@angular-devkit/build-angular": "~0.901.1",
+		"@angular/cli": "~9.1.1",
+		"@angular/compiler-cli": "~9.1.1",
+		"@angular/language-service": "~9.1.1",
+		"@compodoc/compodoc": "~1.1.9",
+		"@types/faker": "~4.1.5",
+		"@types/graphql": "~14.2.2",
+		"@types/jasmine": "~3.4.1",
+		"@types/jasminewd2": "~2.0.3",
+		"@types/lodash": "~4.14.123",
+		"@types/immutable": "~3.8.7",
+		"@types/node": "~12.11.1",
+		"@types/uuid": "~3.4.4",
+		"codelyzer": "~5.1.2",
+		"faker": "~4.1.0",
+		"jasmine-core": "~3.5.0",
+    	"jasmine-spec-reporter": "~4.2.1",
+		"jasmine-marbles": "~0.6.0",
+		"karma": "~4.4.1",
+		"karma-chrome-launcher": "~3.1.0",
+		"karma-coverage-istanbul-reporter": "~2.1.0",
+		"karma-jasmine": "~3.0.1",
+		"karma-jasmine-html-reporter": "^1.4.2",
+		"protractor": "~5.4.3",
+		"ts-node": "~8.4.1",
+		"tslint": "~5.20.0",
+		"typescript": "~3.7.5",
+		"uuid": "~3.3.2",
+		"//": [
+			" protected region % [Configure the package versions for development here] end "
+		],
+		"//": [
+			" protected region % [Add custom development dependencies here] off begin "
+		],
+		"//": [
+			" protected region % [Add custom development dependencies here] end "
+		]
+	},
+	"//": [
+		" protected region % [Add more custom package configuration here] off begin "
+	],
+	"//": [
+		" protected region % [Add more custom package configuration here] end "
+	]
 }
