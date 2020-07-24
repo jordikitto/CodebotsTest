@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modelink threeWay="true" forceExeedL="true" forceExeedM="true" forceExeedR="true">
+  <model path="/dev.jordisapp.models/ui/jordisapp.angularbotui" position="LEFT" />
+  <model path="/dev.jordisapp.models/entity/jordisapp.springbotentity" position="MIDDLE" />
+  <model path="/dev.jordisapp.models/security/jordisapp.commonsecurity" position="RIGHT" />
+</modelink>
